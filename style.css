@@ -1,0 +1,276 @@
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Custom CSS for User Login and Singup pages */
+
+
+.user-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transparent-nav {
+        background-color: transparent;
+        position: absolute;
+        top: 0%;
+        width: 100%;
+}
+
+.background-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*  Banner Custom CSS */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+    background-color: black;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+
+.box {
+    padding: 20px;
+    position: relative;
+    top: -25%;
+    width: 200px;
+    height: 255px;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.box span {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(330px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0004);
+}
+
+
+.box span img {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 200px;
+    height: 255px;
+    /* object-fit: contain; */
+}
+
+
+.btns {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 30px;
+}
+
+.btns .btn::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(45deg) translate(-2.5px, 2.5px);
+}
+
+.btns .btn.prev::before {
+    transform: rotate(225deg) translate(-2.5px, 2.5px);
+}
+
+.btns .btn:active::before {
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+}
+
+#author {
+    position: relative;
+    width: 150px;
+    height: 60px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-75px, -30px);
+    color: white;
+    /* font-size: 24px; */
+    background-color: #0009;
+
+}
+
+#inner-author {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* MEDIA Qs */
+
+
+@media screen and (max-width: 426px) {
+    .container1 {
+        display: none;
+    }
+
+    #name {
+        display: none;
+    }
+
+    .banner {
+        background-image: url('./Images/banner.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+
+/*  Random Classes */
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected {
+    background-color: lightblue;
+}
+
+
+
+/*  Custom Fonts */
+
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.box-color {
+    background: rgb(34, 186, 195);
+    background: linear-gradient(0deg, rgba(34, 186, 195, 0.6671918767507004) 0%, rgba(80, 80, 80, 0.5747549019607843) 100%);
+}
+
+
+.bg-lightblue {
+    background: linear-gradient(0deg, rgba(34, 186, 195, 0.6671918767507004) 0%, rgb(33, 37, 41,0.9) 100%);
+ 
+} 
+
+#bookContainer .card:hover {
+    transform: scale(1.10);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.text-white td {
+    vertical-align: middle;
+}
+
+
+
+/* Notes */
+
+.note-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+#buttonNotes {
+    position: absolute;
+    right: 0;
+    width: 140px;
+    top: 70px;
+}
+
+/* Comment section */
+
+.comment-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+/*  Containers */
+
+.hideContainer {
+    display: none;
+}
+
+
+/* Admin Dashboard*/
+
+
+.btn-box:hover {
+    transform: scale(1.05);
+}
+
+.btn-box i {
+    font-size: 48px;
+}
+
+
+.book-display-bg {
+    background: rgb(172, 200, 201);
+    background: linear-gradient(0deg, rgba(172, 200, 201, 0.6671918767507004) 4%, rgba(141, 215, 219, 1) 100%, rgba(203, 200, 200, 0.5747549019607843) 100%);
+}
+
+
+.btn-box {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Comment Info */
+
+#commentInfo {
+    position: relative;
+    display: block;
+    left: 97%;
+    bottom: 91%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
